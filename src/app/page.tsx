@@ -71,9 +71,9 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
             className="text-[3.5rem] leading-[1] md:text-[5rem] lg:text-[6rem] font-medium tracking-tighter mb-6 md:mb-8"
           >
-            The visa 
+            The agentic visa 
             <br />
-            <span className="text-[#A0A0A0]">machine.</span>
+            <span className="text-[#A0A0A0]">tool.</span>
           </motion.h1>
 
           <motion.p 
@@ -82,7 +82,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
             className="text-sm md:text-base text-[#666] max-w-lg mb-10 md:mb-12 font-light leading-relaxed"
           >
-            An agentic visa agent (also called a visa consultant, immigration agent, or visa facilitator) is a professional who assists individuals through the entire visa process from determining eligibility to submission, tracking, and communication with the relevant immigration authority.
+            An agentic visa agent (also called a visa consultant, immigration agent, or visa facilitator) is a tool that assists individuals through the entire visa process from determining eligibility to submission, tracking, and communication with the relevant immigration authority.
             <br/><br/>
             They act on behalf of the applicant (with permission)* to ensure the visa application process is handled correctly and efficiently.
           </motion.p>
