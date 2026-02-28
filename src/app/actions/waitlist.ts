@@ -7,8 +7,8 @@ export async function joinWaitlist(formData: FormData) {
     return { error: "Please provide a valid email address." };
   }
 
-  // Use FORMSPREE_URL from env, or fallback to placeholder for now
-  const FORMSPREE_URL = process.env.FORMSPREE_URL || "https://formspree.io/f/placeholder";
+  // Hardcoded Formspree URL as requested
+  const FORMSPREE_URL = "https://formspree.io/f/xojnzaak";
 
   try {
     const response = await fetch(FORMSPREE_URL, {
