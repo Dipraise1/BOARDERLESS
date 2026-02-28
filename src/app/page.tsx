@@ -187,17 +187,17 @@ export default function Home() {
             animate={{ rotateZ: 360, rotateX: [60, 65, 60] }}
             transition={{ rotateZ: { duration: 40, repeat: Infinity, ease: "linear" }, rotateX: { duration: 8, repeat: Infinity, ease: "easeInOut" } }}
             className="absolute rounded-full border border-black-[0.03] w-[500px] h-[500px] md:w-[600px] md:h-[600px] pointer-events-none"
-            style={{ transformStyle: 'preserve-3d', translateZ: -200 }}
+            style={{ transformStyle: 'preserve-3d', transform: 'translateZ(-200px)' }}
           />
           <motion.div 
             animate={{ rotateZ: -360, rotateX: [50, 45, 50] }}
             transition={{ rotateZ: { duration: 50, repeat: Infinity, ease: "linear" }, rotateX: { duration: 10, repeat: Infinity, ease: "easeInOut" } }}
             className="absolute rounded-full border border-black/5 w-[400px] h-[400px] md:w-[500px] md:h-[500px] pointer-events-none"
-            style={{ transformStyle: 'preserve-3d', translateZ: -100 }}
+            style={{ transformStyle: 'preserve-3d', transform: 'translateZ(-100px)' }}
           />
 
           {/* Central Connecting Data Lines */}
-          <div className="absolute inset-0 flex items-center justify-center pointer-events-none" style={{ translateZ: 0 }}>
+          <div className="absolute inset-0 flex items-center justify-center pointer-events-none" style={{ transform: 'translateZ(0px)' }}>
             <svg 
               className="w-[600px] h-[600px] opacity-60 hidden md:block overflow-visible" 
               viewBox="0 0 600 600"
@@ -254,7 +254,7 @@ export default function Home() {
               }}
               transition={{ repeat: Infinity, duration: 6 + Math.random() * 8, ease: "easeInOut" }}
               className="absolute w-1.5 h-1.5 rounded-full bg-black/30 blur-[0.5px] z-0"
-              style={{ translateZ: Math.random() * 600 - 300 }}
+              style={{ transform: `translateZ(${Math.random() * 600 - 300}px)` }}
             />
           ))}
 
@@ -263,7 +263,7 @@ export default function Home() {
             initial={{ x: -120, y: -160 }}
             animate={{ y: [-160, -170, -160] }}
             transition={{ repeat: Infinity, duration: 8, ease: "easeInOut" }}
-            style={{ translateZ: -100 }}
+            style={{ transform: 'translateZ(-100px)' }}
             className="absolute z-20"
           >
             <div className="w-64 sm:w-72 md:w-80 p-6 bg-white/60 backdrop-blur-xl border border-white/80 shadow-[0_8px_32px_-8px_rgba(0,0,0,0.06)] rounded-2xl relative overflow-hidden group hover:bg-white/80 transition-all duration-500 cursor-default">
@@ -287,7 +287,7 @@ export default function Home() {
             initial={{ x: 100, y: -20 }}
             animate={{ y: [-20, -10, -20] }}
             transition={{ repeat: Infinity, duration: 7, ease: "easeInOut", delay: 1 }}
-            style={{ translateZ: 100 }}
+            style={{ transform: 'translateZ(100px)' }}
             className="absolute z-30"
           >
             <div className="w-64 sm:w-72 md:w-80 p-6 bg-white/70 backdrop-blur-2xl border border-white/90 shadow-[0_20px_40px_-10px_rgba(0,0,0,0.08)] rounded-2xl relative overflow-hidden group hover:bg-white/90 transition-all duration-500 ring-1 ring-black/5 cursor-default">
@@ -321,7 +321,7 @@ export default function Home() {
             initial={{ x: -80, y: 140 }}
             animate={{ y: [140, 150, 140] }}
             transition={{ repeat: Infinity, duration: 9, ease: "easeInOut", delay: 2 }}
-            style={{ translateZ: 250 }}
+            style={{ transform: 'translateZ(250px)' }}
             className="absolute z-40"
           >
              <div className="w-64 sm:w-72 md:w-80 p-6 bg-[#18181B]/95 backdrop-blur-2xl border border-[#27272A] shadow-[0_30px_60px_-15px_rgba(0,0,0,0.3)] rounded-2xl relative overflow-hidden group cursor-default transition-all duration-500 hover:border-[#3F3F46]">
